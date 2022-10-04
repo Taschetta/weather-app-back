@@ -2,9 +2,11 @@
   "name": "weather-app-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "source/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config source/index.js",
+    "start": "node -r dotenv/config source/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,8 @@
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.20"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

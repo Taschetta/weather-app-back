@@ -1,0 +1,8 @@
+{
+  "name": "@packages/hash",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.0.1"
+  }
+}
